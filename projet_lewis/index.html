@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil Dep.Physique</title>
+
+        <!-- Inclure Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Inclure Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Inclure jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <!-- Inclure Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <!-- Inclure Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!-- FavIcon Link -->
+		<link rel="icon" href="assets/images/favicon-16x16.png" type="image/gif" sizes="16x16">
+		<!-- Bootstrap CSS Link -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+		<!-- Font Awesome Icon CSS Link -->
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<!-- Slick Slider CSS Link -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+		<!-- Themify Icons -->
+		<link rel="stylesheet" type="text/css" href="assets/vendor/themify/themify-icons.css">
+		<!-- Wow Animation CSS Link -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<!-- Main Style CSS Link -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <style>
+            .custom-divider {
+                border-top: 2px solid #ccc; /* Ligne en haut */
+                margin-top: 20px; /* Marge en haut */
+                margin-bottom: 20px; /* Marge en bas */
+            }
+            .no-transition {
+                transition: none !important; /* Désactiver les transitions */
+            }
+            .footer-section {
+                background-color: #f8f9fa; /* Couleur de fond de la section */
+                padding: 20px 0;
+            }
+            .social-media a {
+                margin: 0 10px;
+            }
+        </style>
+
+        <style>
+            .navbar-nav .nav-item .nav-link {
+                color: white;
+            }
+            .navbar-nav .nav-item .nav-link:hover {
+                color: #ddd;
+            }
+            .navbar-brand img {
+                height: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            
+            <!-- Top Banner -->
+            <div class="container-fluid bg-success text-white text-center py-2">
+                <div class="row">
+                    <div class="col-lg-6 col-6">
+                        Bienvenue sur la platforme du département de Physique de FAST/UAC !
+                    </div>
+                    <div class="col-lg-4 col-3"></div>
+                    <div class="col-lg-2 col-3">
+                        <a href="#" class="text-white">CONNEXION</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Banner -->
+            <div class="container-fluid bg-white text-center py-3">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <img src="logoFAST.png" alt="FAST Logo" class="img-fluid" style="width: 110px; height: auto;">
+                        <h6 class="mb-0">Faculté des Sciences Techniques</h6>
+                    </div>
+                    <div class="col-4">
+                        <img src="logoERSE.jpg" alt="ERSE Logo" class="img-fluid" style="width: 120px; height: auto;">
+                        <h6 class="mb-0">Energies Renouvelables et Systèmes Energétiques</h6>
+                    </div>
+                    <div class="col-4">
+                        <img src="logoUAC.png" alt="UAC Logo" class="img-fluid" style="width: 100px; height: auto;">
+                        <h6 class="mb-0">Université d'Abomey-Calavi</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-primary bg-success">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gouvernanceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Présentation
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="gouvernanceDropdown">
+                                    <li><a class="dropdown-item" href="motChefDep.html">Mot du chef dép.</a></li>
+                                    <li><a class="dropdown-item" href="historique.html">Historique</a></li>
+                                    <li><a class="dropdown-item" href="admin.html">Administration</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="formationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Formation
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="formationDropdown">
+                                    <li><a class="dropdown-item" href="licencePF.html">Licence Fondamendale</a></li>
+                                    <li><a class="dropdown-item" href="licenceERSE.html">Licence ERSE</a></li>
+                                    <li><a class="dropdown-item" href="masterERSE.html">Master ERSE</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">Doctorat</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="formationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cours, TP
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="formationDropdown">
+                                    <li><a class="dropdown-item" href="#">Emplois du temps</a></li>
+                                    <li><a class="dropdown-item" href="masses-and-springs_fr.html">Accès aux TP en ligne</a></li>
+                                    <li><a class="dropdown-item" href="#">Soumission des travaux</a></li>
+                                    <li><a class="dropdown-item" href="#">Évaluations et résultats des TP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="rechercheDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recherche
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="rechercheDropdown">
+                                    <li><a class="dropdown-item" href="#">Memoires</a></li>
+                                    <li><a class="dropdown-item" href="#">Travaux des étudiants</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="actu.html">Actualités</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br>
+
+
+            <!-- Vues Start -->
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="P1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="P1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="P1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- <div class="carousel-item" data-bs-interval="2000">
+                        <img src="P2.jpg" class="d-block w-100" alt="...">
+                    </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Vues End -->
+
+            <!-- Our Services Start -->
+            <!-- MISSIONS -->
+			<section class="main-our-services">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="our-services-title">
+								<!-- <span class="sub-title" id="services">OUR SERVICES</span> -->
+								<h2 class="h2-title">MISSIONS</h2>
+							</div>
+						</div>
+					</div>
+					<div class="our-services-list">
+						<div class="row">
+							<div class="col-xl-4 col-sm-6">
+								<div class="our-service-box wow fadeup-animation" data-wow-delay="0.4s">
+									<div class="our-service-text">
+										<div class="our-service-icon">
+											<img src="assets/images/web-design-icon.png" alt="Web Design">
+										</div>
+										<h3 class="h3-title">Formation</h3>
+										<p>
+                                            Le département de physique s'engage à offrir une formation de qualité, tant théorique que 
+                                            pratique, visant à développer les compétences scientifiques et techniques des étudiants. Nous
+                                            disposons des branches telles que la Physique Fondamentale et l'Energies Renouvelables.
+                                            Nos programmes sont conçus pour fournir une solide base en physique, en intégrant des méthodes 
+                                            pédagogiques innovantes et des expériences de laboratoire enrichissantes. Nous préparons nos 
+                                            étudiants à exceller dans des carrières académiques et professionnelles, en favorisant la pensée 
+                                            critique et l'analyse rigoureuse.
+                                        </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6">
+								<div class="our-service-box wow fadeup-animation" data-wow-delay="0.6s">
+									<div class="our-service-text">
+										<div class="our-service-icon">
+											<img src="assets/images/idea-research-icon.png" alt="Idea & Research">
+										</div>
+										<h3 class="h3-title">Recherche</h3>
+										<p>
+                                            La mission de recherche du département de physique est de mener des investigations de pointe 
+                                            dans divers domaines de la physique. Nous visons à produire des connaissances nouvelles et à 
+                                            contribuer significativement à l'avancement des sciences physiques. Nos chercheurs collaborent 
+                                            avec des institutions nationales et internationales pour aborder des questions scientifiques 
+                                            complexes et développer des technologies innovantes. Les étudiants sont encouragés à participer 
+                                            activement aux projets de recherche, favorisant une culture de découverte et d'innovation.
+                                        </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6">
+								<div class="our-service-box wow fadeup-animation" data-wow-delay="0.8s">
+									<div class="our-service-text">
+										<div class="our-service-icon">
+											<img src="assets/images/web-development-icon.png" alt="Web Development">
+										</div>
+										<h3 class="h3-title">Service Public</h3>
+										<p>
+                                            Le département de physique se consacre également au service public en partageant son expertise 
+                                            avec la communauté et en contribuant au développement socio-économique. Nous organisons des 
+                                            conférences, des ateliers et des programmes éducatifs pour sensibiliser le grand public aux 
+                                            sciences physiques. De plus, nous collaborons avec des entreprises, des écoles et des organismes 
+                                            gouvernementaux pour appliquer les connaissances en physique à des problématiques concrètes, 
+                                            améliorant ainsi la qualité de vie et promouvant le progrès scientifique dans la société.
+                                        </p>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-xl-3 col-sm-6">
+								<div class="our-service-box wow fadeup-animation" data-wow-delay="1s">
+									<div class="our-service-text">
+										<div class="our-service-icon">
+											<img src="assets/images/seo-marketing-icon.png" alt="SEO & Marketing">
+										</div>
+										<h3 class="h3-title">SEO & Marketing</h3>
+										<p>Nam id molestie felis, ac tristique lorem. Morbi mauris libero, cursus.</p>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Our Services End -->
+
+            <!-- Our Blog Start -->
+            <!-- ACTUALITES -->
+			<section class="main-our-blog">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="our-blog-title">
+                                <br>
+								<!-- <span class="sub-title" id="blog">OUR BLOG</span> -->
+								<h2 class="h2-title">ACTUALITES</h2>
+							</div>
+						</div>
+					</div>
+					<div class="main-blog-slider">
+						<div class="row blog-slider">
+							<div class="col-lg-4">
+								<div class="blog-box wow fadeup-animation" data-wow-delay="0.4s">
+									<div class="blog-img-box">
+										<div class="blog-img back-img" style="background-image: url('actu1.jpg')"></div>
+										<div class="blog-date">
+											<a href="javascript:void(0);" title="7 March, 2021"><i class="fa fa-calendar" aria-hidden="true"></i>7 March, 2021</a>
+										</div>
+									</div>
+									<div class="blog-text">
+										<h3 class="h3-title"><a href="blog-detail.html" title="Blog title">5ème Journées Scientifiques Annuelles du RESER-UEMOA</a></h3>
+										<a href="blog-detail.html" title="READ MORE">En savoir plus <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="blog-box wow fadeup-animation" data-wow-delay="0.6s">
+									<div class="blog-img-box">
+										<div class="blog-img back-img" style="background-image: url('assets/images/blog-img2.jpg')"></div>
+										<div class="blog-date">
+											<a href="javascript:void(0);" title="7 March, 2021"><i class="fa fa-calendar" aria-hidden="true"></i>7 March, 2021</a>
+										</div>
+									</div>
+									<div class="blog-text">
+										<h3 class="h3-title"><a href="blog-detail.html" title="Blog title">Annonce officielle des Journées Scientifiques au Bénin</a></h3>
+										<a href="blog-detail.html" title="READ MORE">En savoir plus <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="blog-box wow fadeup-animation" data-wow-delay="0.8s">
+									<div class="blog-img-box">
+										<div class="blog-img back-img" style="background-image: url('assets/images/blog-img3.jpg')"></div>
+										<div class="blog-date">
+											<a href="javascript:void(0);" title="7 March, 2021"><i class="fa fa-calendar" aria-hidden="true"></i>7 March, 2021</a>
+										</div>
+									</div>
+									<div class="blog-text">
+										<h3 class="h3-title"><a href="blog-detail.html" title="Blog title">The Biggest Contribution Of Corporate.</a></h3>
+										<a href="blog-detail.html" title="READ MORE">En savoir plus <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Our Blog End -->
+
+            
+
+            <br>
+            <!-- Footer Start -->
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+                        <div class="col-lg-3">
+							<div class="footer-info">
+								<div class="footer-logo">
+									<a href="#"><img src="logoFAST.png" alt="Logo" title="LogoFAST" class="img-fluid"></a>
+                                    <br>
+                                    <a href="#"><img src="logoERSE.jpg" alt="Logo" title="LogoERSE" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-3">
+							<div class="footer-contact">
+								<h3 class="h3-title footer-title">COORDONNEES</h3>
+								<div class="footer-contact-box">
+									<div class="footer-contact-link">
+										<span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+										<a href="javascript:void(0);" title="Adresse">Département Phys., UAC</a>
+                                    </div>
+								</div>
+								<div class="footer-contact-box">
+									<div class="footer-contact-link">
+										<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                        <a href="javascript:void(0);" title="Tel">+229 00 00 00 00</a>
+									</div>
+								</div>
+								<div class="footer-contact-box">
+									<div class="footer-contact-link">
+										<span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+										<a href="javascript:void(0);" title="Gmail">info@gmail.com</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="our-links">
+								<h3 class="h3-title footer-title">NAVIGATION</h3>
+								<ul>
+									<li><a href="index.html" title="Accueil">Accueil</a></li>
+									<li><a href="historique.html" title="Historique">Historique</a></li>
+									<li><a href="#" title="Services">Services</a></li>
+									<li><a href="actu.html" title="Actualités">Actualités</a></li>
+									<li><a href="contact.html" title="Contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="footer-contact">
+								<h3 class="h3-title footer-title">SUIVEZ-NOUS</h3>
+                                <div class="footer-contact-box">
+									<div class="footer-contact-link">
+                                        <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        <a href="https://www.facebook.com/yourprofile" title="Facebook">Facebook</a>
+                                    </div>
+								</div>
+								<div class="footer-contact-box">
+									<div class="footer-contact-link">
+                                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                                        <a href="https://www.linkedin.com/in/yourprofile" title="LinkedIn">LinkedIn</a>
+                                    </div>
+								</div>
+								<div class="footer-contact-box">
+									<div class="footer-contact-link">
+                                        <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        <a href="https://www.instagram.com/yourprofile" title="Instagram">Instagram</a>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="footer-last">
+				<div class="container">
+					<div class="row align-items-center">
+                        <div class="col-lg-12">
+							<div class="copy-right text-center">
+                                <p>Copyright &copy; 2024 <a href="#" target="_blank"> Département Physique / FAST / UAC</a>. Tous droits réservés.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer End -->
+
+            <!-- #dfff50, #ff5066, #fc9d44 -->
+        
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        
+    </body>
+</html>
